@@ -2,10 +2,10 @@ function getSpaces(num, maxNum) {
     const numDigitCount = Math.floor(Math.log10(num) + 1);
     const maxNumDigitCount = Math.floor(Math.log10(maxNum) + 1);
 
-    let spaces = '_';
+    let spaces = ' ';
 
     for (let i = 0; i < maxNumDigitCount - numDigitCount; i++) {
-        spaces += '_';
+        spaces += ' ';
     }
 
     return spaces;
@@ -36,3 +36,5 @@ function getMultiplicationTable(num) {
         console.log(tableLine);
     }
 }
+
+getMultiplicationTable(2)
